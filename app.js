@@ -76,7 +76,7 @@ console.log(card_container);
 for (let i = 0; i < data_meteo.length; i++) {
     console.log(data_meteo[i]);
     card_container.innerHTML += `
-<article>
+<div class="card">
 <p>${data_meteo[i].title_day}</p>
 <p>${data_meteo[i].title_date}</p>
 <img src="/img/${data_meteo[i].icon}" alt="${data_meteo.alt}">
@@ -85,5 +85,5 @@ for (let i = 0; i < data_meteo.length; i++) {
   <hr>
   <span>${data_meteo[i].temp_min}</span >
 </div >
-</article > `
+</div > `
 }

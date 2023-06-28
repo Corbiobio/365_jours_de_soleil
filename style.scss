@@ -108,7 +108,7 @@ main {
                 grid-template-rows: repeat(4, 1fr);
                 grid-gap: 15px;
 
-                article {
+                .card {
                     width: 100%;
                     font-weight: 700;
                     text-transform: uppercase;
