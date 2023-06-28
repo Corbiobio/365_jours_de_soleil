@@ -19,7 +19,7 @@ header {
     background-color: $blue;
 
     div {
-        padding: 30px;
+        padding: 20px 30px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -86,7 +86,7 @@ main {
             width: 70%;
 
             h2 {
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
 
             .card_container {
@@ -100,7 +100,7 @@ main {
                     font-weight: 700;
                     text-transform: uppercase;
                     background-color: white;
-                    border-radius: 25px;
+                    border-radius: 10px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -140,7 +140,7 @@ main {
         aside {
             width: 30%;
             background-color: $white;
-            border-radius: 25px;
+            border-radius: 10px;
             padding: 20px;
             box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
 
@@ -189,7 +189,6 @@ main {
 
         .img_container {
             width: 50%;
-            height: 100%;
             display: flex;
             flex-wrap: wrap;
             gap: 10px 5%;
