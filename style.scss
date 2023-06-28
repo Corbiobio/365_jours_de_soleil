@@ -72,3 +72,113 @@ header {
         }
     }
 }
+
+main {
+    background-color: $light_blue;
+    padding: 5vh 7.5%;
+
+    .prevision {
+        display: flex;
+        gap: 50px;
+
+        section {
+            width: 70%;
+
+            h2 {
+                margin-bottom: 50px;
+            }
+
+            .card_container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-gap: 15px;
+
+                article {
+                    width: 100%;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    background-color: white;
+                    border-radius: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px 0;
+                    box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    div :nth-child(1) {
+                        color: $red;
+                        margin-right: 5px;
+                    }
+
+                    div :nth-child(3) {
+                        color: $light_blue;
+                        margin-left: 5px;
+                    }
+
+                    div {
+                        display: flex;
+                    }
+
+                    div span::after {
+                        content: "°";
+                    }
+
+                    div hr {
+                        border: 1px solid $black;
+                    }
+                }
+            }
+        }
+
+        aside {
+            width: 30%;
+            background-color: $white;
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    width: 100%;
+                    padding: 5px;
+
+                    a {
+                        display: flex;
+                        gap: 15px;
+                        text-decoration: none;
+
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            filter: brightness(0) saturate(100%) invert(18%) sepia(20%) saturate(3200%) hue-rotate(163deg) brightness(94%) contrast(89%);
+                        }
+
+                        p {
+                            color: $black;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+                li:hover {
+                    transition-property: background-color;
+                    transition-duration: 0.5s;
+                    background-color: rgba(79, 163, 182, 0.5);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
