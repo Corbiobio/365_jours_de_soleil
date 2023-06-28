@@ -48,18 +48,23 @@ header {
             justify-content: space-around;
 
             li {
-                padding: 0 70px;
+                padding: 5px 70px;
                 cursor: pointer;
 
                 a {
-                    height: 40px;
-                    width: 30px;
                     filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(0%) hue-rotate(228deg) brightness(107%) contrast(106%);
                     display: block;
+                    text-decoration: none;
+                    width: 30px;
+                    height: 30px;
 
                     img {
-                        width: 100%;
-                        height: 100%;
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    p {
+                        display: none;
                     }
                 }
             }
@@ -76,6 +81,10 @@ header {
 main {
     background-color: $light_blue;
     padding: 5vh 7.5%;
+
+    .parallax {
+        display: none;
+    }
 
     .prevision {
         display: flex;
@@ -141,7 +150,7 @@ main {
             width: 30%;
             background-color: $white;
             border-radius: 10px;
-            padding: 20px;
+            padding: 40px 20px;
             box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
 
             ul {
@@ -245,6 +254,9 @@ main {
 
                 input[type=submit] {
                     background-color: $light_blue;
+                    color: $white;
+                    font-weight: 700;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -261,5 +273,41 @@ footer {
 
     strong {
         font-family: 'Nosifer', cursive;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    header nav ul li {
+        padding: 5px 0;
+        width: 200px;
+
+        a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                display: block;
+                font-weight: 700;
+                text-transform: uppercase;
+                width: fit-content;
+            }
+        }
+    }
+
+    main {
+        .parallax {
+            display: block;
+            background-image: url("/img/beach-1852945_1920.jpg");
+            width: 100%;
+            height: 600px;
+            margin-bottom: 10vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
 }
