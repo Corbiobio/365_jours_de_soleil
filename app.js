@@ -56,6 +56,20 @@ let data_meteo = [{
     alt: "vent",
     temp_max: "4",
     temp_min: "3"
+}, {
+    title_day: "mar",
+    title_date: "28",
+    icon: "sleet.png",
+    alt: "pluie",
+    temp_max: "7",
+    temp_min: "0"
+}, {
+    title_day: "lun",
+    title_date: "29",
+    icon: "hazy.png",
+    alt: "soleil",
+    temp_max: "4",
+    temp_min: "-2"
 },];
 console.log(card_container);
 
